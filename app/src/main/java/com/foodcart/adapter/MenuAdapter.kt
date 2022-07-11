@@ -1,0 +1,74 @@
+package com.foodcart.adapter
+import android.annotation.SuppressLint
+import android.content.Context
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import android.widget.AdapterView
+import android.widget.Button
+import android.widget.TextView
+import android.widget.Toast
+import androidx.recyclerview.widget.RecyclerView
+import com.example.foodcart.R
+import com.foodcart.modal.MenuFood
+class MenuAdapter(val context: Context,
+                  private var menuList: ArrayList<MenuFood>,
+                  private val listener: OnItemClickListener
+) :
+RecyclerView.Adapter<MenuAdapter.MenuViewHolder>() {
+
+    companion object {
+        var isCartEmpty = true
+    }
+
+    override fun onCreateViewHolder(p0: ViewGroup, p1: Int): MenuViewHolder {
+        val itemView = LayoutInflater.from(p0.context)
+            .inflate(R.layout.recycler_menu, p0, false)
+        return MenuViewHolder(itemView)
+    }
+
+    override fun getItemCount(): Int {
+        return menuList.size
+    }
+
+    interface OnItemClickListener {
+        fun onAddItemClick(foodItem: MenuFood)
+        fun onRemoveItemClick(foodItem: MenuFood)
+    }
+
+
+    @SuppressLint("NotifyDataSetChanged")
+    override fun onBindViewHolder(p0: MenuViewHolder, p1: Int) {
+        val menuObject = menuList[p1]
+        p0.foodItemName.text = menuObject.foodname
+        val cost = "Rs. ${menuObject.foodprice}"
+        p0.foodItemCost.text = cost
+        p0.sno.text = (p1 + 1).toString()
+        p0.addToCart.setOnClickListener {
+            p0.addToCart.visibility = View.GONE
+            p0.removeFromCart.visibility = View.VISIBLE
+            listener.onAddItemClick(menuObject)
+           notifyDataSetChanged()
+            //refresh()
+        }
+        p0.removeFromCart.setOnClickListener {
+            p0.removeFromCart.visibility = View.GONE
+            p0.addToCart.visibility = View.VISIBLE
+            listener.onRemoveItemClick(menuObject)
+           notifyDataSetChanged()
+           // refresh()
+        }
+
+    }
+    override fun getItemViewType(position: Int): Int {
+        return position
+    }
+    class MenuViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+        val foodItemName: TextView = view.findViewById(R.id.txtItemName)
+        val foodItemCost: TextView = view.findViewById(R.id.txtItemCost)
+        val sno: TextView = view.findViewById(R.id.txtSNo)
+        val addToCart: Button = view.findViewById(R.id.btnAddtoCart)
+        val removeFromCart: Button = view.findViewById(R.id.btnRemoveFromCart)
+    }
+}
+

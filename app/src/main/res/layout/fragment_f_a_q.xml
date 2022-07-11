@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/faq"
+    tools:context="com.foodcart.fragment.FAQFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Q.1 How fast will the food be delivered?"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/colorfav"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/one"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:padding="10dp"
+                android:textColor="@android:color/black"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Q.2 What will be the quality of the food?"
+                android:textColor="@color/colorfav"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="sans-serif-light"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/two"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:padding="10dp"
+                android:textColor="@android:color/black"/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/darker_gray"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Q.3 Will the details of delivery boy be provided?"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/colorfav"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/three"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:padding="10dp"
+                android:textColor="@android:color/black"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/darker_gray"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Q.4 Will the restaurant be corona free?"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorfav"
+                android:fontFamily="sans-serif-light"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/four"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:padding="10dp"
+                android:textColor="@android:color/black"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/darker_gray"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Q.5 Are the delivery guys vaccinated?"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/colorfav"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/five"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:padding="10dp"
+                android:textColor="@android:color/black"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/darker_gray"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Q.6 Can delivery guy deliver without ringing the doorbell?"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/colorfav"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/six"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:padding="10dp"
+                android:textColor="@android:color/black"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/darker_gray"/>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

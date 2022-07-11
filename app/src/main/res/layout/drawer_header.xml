@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="240dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#F4BB44">
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/userImage"
+        android:layout_height="100dp"
+        android:layout_width="100dp"
+        app:shapeAppearanceOverlay="@style/roundedImageViewRounded"
+        app:strokeColor="@color/black"
+        app:strokeWidth="2dp" />
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name"
+        android:textColor="#000000"
+        android:padding="10dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="casual"
+        android:textStyle="normal"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/userEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mail"
+        android:textColor="#000000"
+        android:padding="10dp"
+        android:layout_marginTop="5dp"
+        android:textStyle="normal"
+        android:fontFamily="casual"
+        android:textSize="20sp"/>
+</LinearLayout>
+

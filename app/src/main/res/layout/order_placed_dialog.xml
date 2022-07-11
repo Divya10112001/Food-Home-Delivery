@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:background="@color/browser_actions_bg_grey">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgActionOrderPlaced"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="70dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/action_order_placed"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgActionOrderPlaced"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:padding="5dp"
+            android:text="Order Placed!!"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorfav" />
+
+        <Button
+            android:id="@+id/btnOk"
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:backgroundTint="@color/colorfav"
+            android:text="Ok"
+            android:textColor="@android:color/black" />
+
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cart"
+    tools:context="com.foodcart.activity.CartActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarcart"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorprimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Light"
+        app:titleTextColor="@color/black" />
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No items in the cart."
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_centerInParent="true"/>
+    <LinearLayout
+        android:layout_below="@+id/toolbarcart"
+        android:id="@+id/ll0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/txtrestname"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:padding="5dp"
+            android:text="Ordering from : "
+            android:textSize="15sp"  />
+        <TextView
+            android:id="@+id/restname"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:padding="5dp"
+            android:text="@string/restaurants"
+            android:textSize="15sp"  />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll0"
+        tools:listitem="@layout/historyfoodrecycler" />
+
+    <Button
+        android:id="@+id/orderbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/brown"
+        android:padding="2dp"
+        android:text="@string/place_order"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/pbc" />
+</RelativeLayout>

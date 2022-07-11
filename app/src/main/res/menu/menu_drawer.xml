@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="@string/restaurants"
+        android:icon="@drawable/ic_baseline_restaurant_menu_24"
+        android:id="@+id/home"    />
+
+    <item
+        android:title="@string/faqs"
+        android:icon="@drawable/ic_baseline_question_answer_24"
+        android:id="@+id/faq"
+        />
+
+    <item
+        android:title="@string/logout"
+        android:icon="@drawable/ic_baseline_logout"
+        android:id="@+id/logout"
+        />
+
+</menu>

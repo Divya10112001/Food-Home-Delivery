@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">FoodCart</string>
+    <string name="sort">Sort</string>
+    <string name="restaurants">Restaurants</string>
+    <string name="profile">My Profile</string>
+    <string name="mycart">My Cart</string>
+    <string name="faqs">FAQs</string>
+    <string name="logout">Logout</string>
+    <string name="favourites">Favourites</string>
+    <string name="food">Food</string>
+    <string name="dish">Dish</string>
+    <string name="rs_200">Rs.</string>
+    <string name="add">ADD</string>
+    <string name="remove">REMOVE</string>
+    <string name="_4_2">4.2</string>
+    <string name="mail">Mail</string>
+    <string name="name">Name</string>
+    <string name="open_drawer">Open Drawer</string>
+    <string name="close_drawer">Close Drawer</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="place_order">place order</string>
+    <string name="one">The food will be delivered as soon as the restaurant prepares it.</string>
+    <string name="two">The quality of food will be best keeping all norms and tastes in mind.</string>
+    <string name="three">Yes,the details of delivery boy will be provided prior to the delivery.</string>
+    <string name="four">The restaurant will follow all rules and regulations implied by corona.</string>
+    <string name="five">The delivery guy will be fully vaccinated.</string>
+    <string name="six">The food will be handed to you as per your norms.</string>
+    <string name="login">Login</string>
+    <string name="move_to_cart">Move To Cart</string>
+
+</resources>
